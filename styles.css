@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: block;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(101, 77, 124);
+}
+
+#author-name {
+    text-align: center;
+    color: rgb(227, 242, 255);
+}
