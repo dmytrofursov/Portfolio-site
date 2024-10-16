@@ -1,20 +1,539 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="widht=device-width, initial-scale=1.0">
-        <title>Dmytro Fursov</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link href="styles.css" rel="stylesheet">
-    </head>
-    <body>
-
-        <div id="header">
-            <h1 id="author-name">Dmytro Fursov</h1>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+    <title>Dmytro Fursov</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="header" class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Dmytro Fursov</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Resume</a>
+            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Contacts</a>
+          </div>
         </div>
+      </div>
+    </nav>
 
-        <div id="body"></div>
+    <div id="title" class="container-fluid">
+      <h2 id="title-qualification">Robotics Specialist Portfolio</h2>
+      <h1 id="full-name">DMYTRO FURSOV</h1>
+    </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
+    <div id="summary" class="container-fluid text-center">
+      <h1>SUMMARY</h1>
+      <p>
+        Thanks for checking out my portfolio! Whether you're a recruiter,
+        engineer or friend, I hope that you'll enjoy the ride.
+      </p>
+      <div id="target-roles" class="row">
+        <div
+          style="
+            margin: auto;
+            position: relative;
+            width: 80%;
+            height: auto;
+            max-width: 1100px;
+            margin-top: 1.7em;
+            margin-bottom: 0.9em;
+            overflow: hidden;
+            border-radius: 8px;
+          "
+        >
+          <img
+            class="img-fluid"
+            src="media\photo\target_Roles.png"
+            alt="Target roles: Robot System Integrator, Robotics Application Engineer, Robot Programmer"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="skills" class="container-fluid text-center">
+      <div class="row">
+        <div id="hardskills" class="col container text-center">
+          <div class="title-plus-logos">
+            <h1>HARD-SKILLS</h1>
+            <div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <label class="skill-label"
+                    ><h3>Industrial Robotics</h3></label
+                  >
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 90%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>Automation</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 65%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"
+                    ><h3>CAD Computer-Aided-Design</h3></label
+                  >
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 70%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>Computer Vision</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 80%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"
+                    ><h3>Technical Documentation Writing</h3></label
+                  >
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 95%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>Web Development</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 40%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>Networking</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 60%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="languages" class="col container text-center">
+          <div class="title-plus-logos">
+            <h1>LANGUAGES</h1>
+            <div>
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>Russian</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>Ukrainian</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 65%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>Italian</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 92%"></div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <label class="skill-label"><h3>English</h3></label>
+                  <div
+                    class="progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 80%"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="software" class="col container text-center">
+          <div class="title-plus-logos">
+            <h1>SOFTWARE / PROGRAMMING LANGUAGES</h1>
+            <div class="software-skills">
+              <div class="row">
+                <div class="col">
+                  <label class="skill-label"
+                    ><img
+                      class="software-img"
+                      src="media\photo\fanuc-roboguide.png"
+                      class="img-fluid"
+                      alt="fanuc roboguide"
+                  /></label>
+                  <div
+                    class="progress software-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 98%"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <label class="skill-label"
+                    ><img
+                      class="software-img"
+                      src="media\photo\rhinoceros.png"
+                      class="img-fluid"
+                      alt="rhinoceros"
+                  /></label>
+                  <div
+                    class="progress software-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 78%"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <label class="skill-label"
+                    ><img
+                      class="software-img"
+                      src="media\photo\solidworks-logo.png"
+                      class="img-fluid"
+                      alt="solidworks"
+                  /></label>
+                  <div
+                    class="progress software-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 30%"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <label class="skill-label"
+                    ><img
+                      class="software-img"
+                      src="media/photo/office365-logo.jpg"
+                      class="img-fluid"
+                      alt="office365"
+                  /></label>
+                  <div
+                    class="progress software-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <label class="skill-label"
+                    ><img
+                      class="software-img"
+                      src="media\photo\javascript.png"
+                      class="img-fluid"
+                      alt="javascript"
+                  /></label>
+                  <div
+                    class="progress software-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                </div>
+                <div class="col">
+                  <label class="skill-label"
+                    ><img
+                      class="software-img"
+                      src="media\photo\Bootstrap_logo.svg.png"
+                      class="img-fluid"
+                      alt="bootstrap"
+                  /></label>
+                  <div
+                    class="progress software-progress"
+                    role="progressbar"
+                    aria-label="Basic example"
+                    aria-valuenow="0"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="certifications" class="col container text-center">
+          <div class="title-plus-logos">
+            <h1>MAIN CERTIFICATIONS</h1>
+            <div class="row certifications">
+              <div class="col">
+                <figure class="figure">
+                  <img
+                    class="software-img"
+                    src="media/photo/cisco_ccna.jpg"
+                    class="img-fluid"
+                    alt="ccna"
+                  />
+                  <figcaption class="figure-caption skill-label">
+                    Cisco CCNA
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img
+                    class="software-img"
+                    src="media\photo\fanuc.png"
+                    class="img-fluid"
+                    alt="FANUC RO03"
+                  />
+                  <figcaption class="figure-caption skill-label">
+                    RO03 Basic Robot Programming
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img
+                    class="software-img"
+                    src="media\photo\fanuc.png"
+                    class="img-fluid"
+                    alt="FANUC RO04"
+                  />
+                  <figcaption class="figure-caption skill-label">
+                    RO04 Advanced Robot Programming
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img
+                    class="software-img"
+                    src="media\photo\fanuc.png"
+                    class="img-fluid"
+                    alt="FANUC RO06"
+                  />
+                  <figcaption class="figure-caption skill-label">
+                    RO06 DCS (Dual-Check-Safety)
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col">
+                <figure class="figure">
+                  <img
+                    class="software-img"
+                    src="media\photo\fanuc.png"
+                    class="img-fluid"
+                    alt="FANUC RO09"
+                  />
+                  <figcaption class="figure-caption skill-label">
+                    RO09 iRVision
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="experience" class="container-fluid text-center">
+      <div class="experience-line">
+        <h1>EXPERIENCE</h1>
+        <div class="companies">
+          <div class="row">
+            <div class="col">
+              <label class="company-label"
+                ><img
+                  class="company-img"
+                  src="media\photo\fanuc.png"
+                  class="img-fluid"
+                  alt="fanuc"
+              /></label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="workExperience">
+              <ul>
+                <li>
+                  <div class="jobPosition">
+                    <span class="bolded">
+                      <button class="btn btn-primary btn-purple" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">APPLICATION ENGINEER</button>
+                    </span>
+                    <span> Jan 2023 - Feb 2024 </span>
+                  </div>
+                  <div class="projectName bolded">
+                    <span> Internship | FANUC Italia </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Work Description Application engineer-->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasScrollingLabel">APPLICATION ENGINEER</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <h2>Pre-sale and post-sale activities in robotics division</h2>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">FANUC ROBOGUIDE Software</li>
+            <li class="list-group-item">Estimating reachability, durability and cycle time</li>
+            <li class="list-group-item">Camera Calibration and Vision Processes Creation</li>
+            <li class="list-group-item">Techincal support</li>
+            <li class="list-group-item">Writing Techincal Documentations of Applications</li>
+            <li class="list-group-item">Pick&Place, Bin-Picking, Showroom Applications</li>
+            <li class="list-group-item">CAD (Computer-Aided-Design)t</li>
+            <li class="list-group-item">Field bus configuration (Ethernet, Profinet)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div id="project-title-plus-image"></div>
+      <div id="project-list"></div>
+
+      <div id="projects-buttons"></div>
+    </div>
+
+    <div id="footer" class="container">
+      <div id="contacts" class="row">
+        <div id="contacts-linkedin" class="col-sm">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/dmytro-fursov-01aa84183?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blg%2FtqbATQo6IbGJjMrnNxw%3D%3D"
+            ><i class="fa-brands fa-linkedin text-primary"> </i>
+            <span class="text-primary">Linkedin</span></a
+          >
+        </div>
+        <div id="contacts-email" class="col-sm">
+          <span>Email: dmytrofursov@gmail.com</span>
+        </div>
+      </div>
+      <div id="copyright" class="row">
+        <h6 class="col-sm">Copyright © 2024 Dmytro Fursov</h6>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/4c8f1ce74f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
