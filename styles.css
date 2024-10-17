@@ -38,30 +38,67 @@ h1 {
     background-color: rgb(101, 77, 124);
 }
 
+.navbar {
+  position: absolute;
+  z-index: 2;
+  background-color: transparent !important;
+}
+.navbar-brand {
+  margin-left: 25%;
+}
+
+.nav-link, .navbar-brand {
+  color: aliceblue !important;
+}
+
+#navbarNavAltMarkup {
+  margin-left: 40% !important;
+}
+
 #author-name {
     text-align: center;
     color: rgb(227, 242, 255);
+}
+
+.darker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("media/photo/background_main.jpg");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  filter: brightness(50%);
+  z-index: -1;
 }
 
 #title {
     display: block;
     text-align: center;
     width: 100vw;
-    height: 40vh;
-    background-color: rgb(141, 94, 94);
+    height: 50vh;
+    z-index: 2;
+    background-color: transparent;
     color: aliceblue;
+    margin: 0;
+    margin-bottom: -30px;
+    padding: 0;
 }
 
 #title-qualification {
     display: block;
+    z-index: 2;
     padding-top: 5%;
+    filter: brightness(200%) !important;
 }
 
 #full-name {
     display: block;
-    padding-top: 50px;
+    padding-top: 45px;
     font: bolder;
-    font-size: 72px
+    font-size: 72px;
+    filter: brightness(200%) !important;
+    z-index: 2;
 }
 
 #footer {
@@ -144,6 +181,10 @@ h1 {
     max-width: 75%;
 }
 
+#skills {
+  max-width: 1500px;
+}
+
 .software-skills .col {
     max-width: 200px !important;
     margin: auto;
@@ -162,6 +203,10 @@ h1 {
 .progress {
     max-width: 400px;
     margin: auto;
+}
+
+.progress-bar {
+  background-color: #6534be;
 }
 
 .software-progress {
@@ -233,8 +278,9 @@ h1 {
   }
 
   .btn-purple {
-    background-color: #6f42c1;
-    border-color: #6f42c1;
+    background-color: #6f42c1 !important;
+    border-color: #6f42c1 !important;
+    border-radius: 30px;
   }
 
   .btn-purple:hover {
@@ -244,4 +290,48 @@ h1 {
 
   .btn-purple:active {
     background-color: #6534be !important;
+  }
+
+  #project-title-plus-image {
+    height: 40vh;
+    background-color: rgb(71, 71, 59);
+    color: aliceblue;
+  }
+  #project-title-plus-image h1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top:35%;
+    font-size: 72px;
+  }
+
+  #project-list {
+    max-width: 80vw;
+  }
+
+  .card {
+    margin: 30px auto;
+    padding: 10px;
+    min-width: 70%;
+    min-height: 90%;
+  }
+
+  .card video {
+    border-radius: 1%;
+  }
+
+  .card-img-top {
+    max-width: 400px;
+    max-height: 300px;
+    margin: auto;
+  }
+
+  .companies .row {
+    margin-bottom: 50px;
+  }
+
+  #projects-buttons {
+    max-width: 1000px;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
