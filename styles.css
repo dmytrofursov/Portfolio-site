@@ -33,6 +33,10 @@
     color: rgb(255, 255, 255);
     transform: scale(1.0) !important;
   }
+
+  #btn-back-to-top {
+    visibility: hidden;
+  }
 }
 
 * {
@@ -326,7 +330,6 @@ h1 {
 }
 
 .card video:hover {
-  border-radius: 1%;
   transform: scale(1.1);
   transition: transform .2;
   transform-style: preserve-3d;
@@ -336,6 +339,12 @@ h1 {
   max-width: 400px;
   max-height: 300px;
   margin: auto;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  transition: transform .2;
+  transform-style: preserve-3d;
 }
 
 .companies .row {
@@ -375,4 +384,16 @@ h1 {
 #about-me-photo {
   min-width: 300px;;
   height: auto;
+}
+
+#resume-button {
+  text-align: center;
+  margin: auto auto 20px auto;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 140px;
+  right: 40px;
+  display: none;
 }
