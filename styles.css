@@ -146,6 +146,7 @@ h1 {
 
 .nav-link {
   color: rgb(190, 190, 190);
+  font-size: 1.4rem;
 }
 
 .nav-link:hover {
@@ -396,4 +397,19 @@ h1 {
   bottom: 140px;
   right: 40px;
   display: none;
+}
+
+#resume-content {
+  width: 100%;
+  max-width: 1500px;
+}
+
+#resume-download {
+  margin: 20px;
+}
+
+#resume-image {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
 }
