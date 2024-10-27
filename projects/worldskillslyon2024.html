@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="widht=device-width, initial-scale=1.0" />
+    <title>Dmytro Fursov</title>
+    <link
+      rel="stylesheet"
+      href="..\node_modules\bootstrap\dist\css\bootstrap.css"
+    />
+    <link href="..\styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="header">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="..\index.html"
+            ><img id="brand" src="..\media\photo\logo.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="..\index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\index.html#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="..\resume.html">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contacts</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="main-header">
+        <h1 class="display-6">Solution for</h1>
+        <h1 class="display-1">Worldskills Lyon 2024</h1>
+      </div>
+    </div>
+    <!--DO NOT MODIFY NOTHING ABOVE-->
+
+    <div class="project-description container-fluid">
+      <div class="row">
+        <h1 class="project-title">Description</h1>
+        <div class="row project-description">
+          <div class="col-md-7 project-photo">
+            <video
+              src="..\media/video/ws_lyon.mp4"
+              class="object-fit-scale rounded"
+              autoplay
+              muted
+              loop
+            ></video>
+          </div>
+          <div class="col-md-5">
+            <p>
+              <a
+                href="https://worldskills2024.com/en/home-page/"
+                target="_blank"
+                >WorldSkills Lyon 2024</a
+              >
+              Test project for the Skill 63 -
+              <b>Robot System Integration</b> was about
+              <b>mounting EV battery packages</b>.
+            </p>
+            <p>
+              <b>The Basic task</b> consisted in a simple <b>Pick & Place</b>.
+              The main difficulty was in handling the parts because of the
+              <b>low tolerance</b> (couple of mm) of the error in quite all
+              positions. Parts were 3D-printed in a
+              <b>very fragile material</b>. So the cost of the error was
+              breaking the entire part.
+            </p>
+            <p>
+              <b>The first Extended task</b> consisted in the
+              <b>sealing simulation</b> of battery pack lid. For this task was
+              required the use of <b>Remote TCP function</b> that helps to
+              follow exactly the border without losing the touch.
+            </p>
+            <p>There were two options for the pattern to follow:</p>
+            <ol>
+              <li>
+                <b>Simple pattern</b> - continuous through the whole border.
+              </li>
+              <li>
+                <b>Advanced pattern</b> - not continuous one, where the
+                tolerance was -0 mm and +3 mm
+              </li>
+            </ol>
+            <p>
+              <b>The second Extended task</b> consisted in
+              <b
+                >finding the position of the battery modules and of the control
+                module</b
+              >
+              (the red one) by using the <b>iRVision</b>. Then the robot had to
+              adapt to the situation without operator's intervention.
+            </p>
+            <p>
+              There were also several errors to handle as <b>sensors fault</b>,
+              <b>pneumatic fault</b>, <b>ESTOP fault</b> and
+              <b>Vision faults</b>.
+            </p>
+            <p>
+              The project also required the creation of a
+              <b>user-friendly HMI</b> for the operator, that could easily
+              understand what stands for what.
+            </p>
+            <p>
+              <b>The Documentation</b> is also one of the main targets, it had
+              to be as
+              <b>comprehensible and as graphical as possible at the same time</b
+              >. The operator should be able to find immediately what he needs
+              and fix everything in case of system or user errors.
+            </p>
+            <p>
+              Lastly the <b>Digital Twin</b> is
+              <b>the first and the last thing</b> the integrator MUST do. The
+              role of the digital twin is essential for the performance of the
+              integrator. The simulation should be is equal as possible to the
+              reality, it defines if the layout is appropriate, positions are
+              reachable, test the cycle time and allows to the integrator to
+              make any change to the robot far more faster than in reality.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="project-title">Sealing Patterns</h1>
+        <div class="col-md-6">
+          <h2 class="project-title">Continuous</h2>
+          <img class="img-fluid" src="wslyon_media\continuous_pattern.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h2 class="project-title">Advanced</h2>
+          <img class="img-fluid" src="wslyon_media\advanced_pattern.jpg" />
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="project-title">Vision Tasks</h1>
+        <div class="col-md-6">
+          <h2 class="project-title">Sorting</h2>
+          <div class="row">
+            <figure class="figure col-md-6">
+              <img
+                src="wslyon_media\case1_mag.png"
+                class="figure-img img-fluid rounded"
+                alt="basic case"
+              />
+              <figcaption class="figure-caption text-end">
+                Basic order
+              </figcaption>
+            </figure>
+            <figure class="figure col-md-6">
+              <img
+                src="wslyon_media\case2_mag.png"
+                class="figure-img img-fluid rounded"
+                alt="random order"
+              />
+              <figcaption class="figure-caption text-end">
+                Random order
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            For this Extension Task,
+            <b>the order of the modules in the magazine was not given</b> to
+            Competitors. Instead <b>iRVision</b> had to be used to detect the
+            type of module.
+          </p>
+          <p>
+            To implement this, I decided to use the
+            <b>switching window tools</b> in order to recognize and save
+            immediatly the found module.
+          </p>
+          <p>
+            Sometimes happened that camera recognized nothing so I did
+            <b>several attempts for every cell</b> and then I
+            <b>reduced the image quality</b> in order to lower the quantity of
+            details and the Time-To-Find.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2 class="project-title">Inspection</h2>
+          <div class="row">
+            <figure class="figure col-md-7" style="margin: auto">
+              <img
+                src="wslyon_media\missing_batteries.jpg"
+                class="figure-img img-fluid rounded"
+                alt="missing batteries"
+              />
+              <figcaption class="figure-caption text-end">
+                Missing AAA cells
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            iRVision had also be used to check that the battery modules are
+            complete with all AAA cells inside the module.
+          </p>
+          <p>
+            After the vision sorting I decided to search in every battery module
+            (except the red one)
+            <b>how many batteries are inside by teaching only one</b>.
+          </p>
+          <p>
+            If there were less than 15 model found it was considered as fault
+            module. Then I decided to <b>display a message</b> on the Teach
+            Pendant with options:
+          </p>
+          <ol>
+            <li>Substitute with Spare Module (6th)</li>
+            <li>Continue normally</li>
+            <li>Abort production</li>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="project-title">ESTOP fault</h1>
+        <div class="row" style="margin: auto">
+          <figure class="figure col-sm-4" style="margin: auto">
+            <img
+              src="wslyon_media\sealing_actuator.png"
+              class="figure-img img-fluid rounded"
+              alt="basic case"
+              style="height: 70%"
+            />
+            <figcaption class="figure-caption text-end">
+              Sealing Tool (upper position)
+            </figcaption>
+          </figure>
+          <figure class="figure col-sm-4" style="margin: auto">
+            <img
+              src="wslyon_media\estops.jpg"
+              class="figure-img img-fluid rounded"
+              alt="random order"
+              style="height: 70%"
+            />
+            <figcaption class="figure-caption text-end">
+              Emergency Stops
+            </figcaption>
+          </figure>
+          <div class="row">
+            <div class="col-sm-8" style="margin: auto">
+              <p>
+                When <b>one of the ESTOPs is pressed</b> the sealing tool should
+                be deactivated (go in upper position). While if there is no more
+                any fault, the sealing tool can come down
+                <b>only if the program is in execution</b>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <h1 class="project-title">HMI</h1>
+      </div>
+    </div>
+
+    <!--DO NOT MODIFY NOTHING BELOW-->
+    <div id="footer" class="container">
+      <div id="contacts" class="row">
+        <div id="contacts-linkedin" class="col-sm">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/dmytro-fursov-01aa84183?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Blg%2FtqbATQo6IbGJjMrnNxw%3D%3D"
+            ><i class="fa-brands fa-linkedin text-primary"> </i>
+            <span class="text-primary">Linkedin</span></a
+          >
+        </div>
+        <div id="contacts-email" class="col-sm">
+          <span>Email: dmytrofursov@gmail.com</span>
+        </div>
+      </div>
+      <div id="copyright" class="row">
+        <h6 class="col-sm">Copyright © 2024 Dmytro Fursov</h6>
+      </div>
+    </div>
+
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4c8f1ce74f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="..\node_modules\bootstrap\dist\js\jquery-3.6.0.js"></script>
+    <script src="..\node_modules\bootstrap\dist\js\bootstrap.bundle.js"></script>
+  </body>
+</html>
